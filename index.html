@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Professional Portfolio</title>
+    <title>Priya Moodley | Electrical & Computer Engineer</title>
     <style>
-        /* Modern Styling with Flexbox/Grid */
+        /* Modern Styling */
         * {
             margin: 0;
             padding: 0;
@@ -25,7 +25,7 @@
             margin: 0 auto;
         }
         
-        /* Header with Gradient Background */
+        /* Header with Gradient */
         header {
             background: linear-gradient(135deg, #2c3e50, #3498db);
             color: white;
@@ -36,11 +36,6 @@
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
-        }
-        
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
         }
         
         /* Navigation */
@@ -66,7 +61,7 @@
             color: #f1c40f;
         }
         
-        /* Sections with Card-Like Design */
+        /* Sections */
         section {
             background: white;
             margin: 2rem auto;
@@ -84,7 +79,56 @@
             display: inline-block;
         }
         
-        /* CV Section (Timeline Layout) */
+        /* Home Section */
+        #home {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        #home p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        /* About Me */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 1.5rem;
+        }
+        
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #3498db;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* CV Section */
         .cv-item {
             margin-bottom: 2rem;
             padding-left: 1.5rem;
@@ -118,7 +162,7 @@
             top: 5px;
         }
         
-        /* Projects Grid */
+        /* Projects */
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -145,9 +189,10 @@
             margin-bottom: 1rem;
         }
         
-        /* Contact Icons */
+        /* Contact */
         .contact-links {
             display: flex;
+            flex-wrap: wrap;
             gap: 1.5rem;
             margin-top: 1rem;
         }
@@ -174,11 +219,20 @@
             margin-top: 2rem;
         }
         
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
                 gap: 0.5rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-pic {
+                margin-bottom: 1.5rem;
             }
             
             .projects {
@@ -186,63 +240,46 @@
             }
         }
     </style>
-    <!-- Font Awesome for icons (optional) -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header with Navigation -->
+    <!-- Navigation -->
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | UX Designer | Data Enthusiast</p>
         <nav>
             <ul>
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#cv"><i class="fas fa-file-alt"></i> CV</a></li>
                 <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="https://via.placeholder.com/200" alt="Your Name" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
-            <div>
-                <p>
-                    Hi! I'm [Your Name], a [Your Profession] with expertise in [key skills]. 
-                    I love solving problems through [design/code/data] and sharing my journey.
-                </p>
-                <p>
-                    <strong>Skills:</strong> HTML/CSS, JavaScript, Python, Figma, [add more].
-                </p>
-            </div>
-        </div>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Hi, I'm <span style="color: #3498db;"> Priya Moodley</span></h1>
+        <p>Electrical & Computer Engineering Student | Embedded Systems | PCB Design</p>
+        <p>I build bridges between hardware and software to solve real-world problems.</p>
+        <a href="#projects" class="btn">View My Projects</a>
     </section>
 
-    <!-- CV Section (Timeline Style) -->
+    <!-- CV Section -->
     <section id="cv">
-        <h2>Curriculum Vitae</h2>
+        <h2>My CV</h2>
         <div class="cv-item">
-            <span class="date">2022 - Present</span>
-            <h3>Job Title | Company Name</h3>
+            <span class="date">2023 - Present</span>
+            <h3>Bachelor's in Electrical & Computer Engineering | University Name</h3>
             <p>
-                Describe your role, achievements, and technologies used. Use bullet points if needed.
+                Relevant coursework: Embedded Systems, Digital Design, Signal Processing, PCB Fabrication
             </p>
         </div>
         <div class="cv-item">
-            <span class="date">2020 - 2022</span>
-            <h3>Degree Name | University Name</h3>
+            <span class="date">Summer 2023</span>
+            <h3>Hardware Engineering Intern | Company Name</h3>
             <p>
-                Relevant coursework, thesis, or extracurricular activities.
-            </p>
-        </div>
-        <div class="cv-item">
-            <span class="date">2018 - 2020</span>
-            <h3>Internship | Organization</h3>
-            <p>
-                Key contributions and skills gained.
+                Designed PCBs for IoT devices and optimized firmware in C++.
             </p>
         </div>
     </section>
@@ -251,26 +288,45 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects">
-            <!-- Project 1 -->
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x200" alt="Project 1">
-                <h3>Project Title</h3>
-                <p>A brief description of the project, tools used, and your role.</p>
+                <img src="https://via.placeholder.com/400x200" alt="PCB Design">
+                <h3>Smart Home PCB</h3>
+                <p>Designed a multilayer PCB for home automation using KiCad.</p>
                 <div style="margin-top: 1rem;">
                     <a href="#"><i class="fab fa-github"></i> Code</a> | 
-                    <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
                 </div>
             </div>
-            
-            <!-- Project 2 -->
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x200" alt="Project 2">
-                <h3>Project Title</h3>
-                <p>A brief description of the project, tools used, and your role.</p>
+                <img src="https://via.placeholder.com/400x200" alt="Embedded System">
+                <h3>ESP32 Sensor Network</h3>
+                <p>Built a wireless sensor array with custom firmware in C.</p>
                 <div style="margin-top: 1rem;">
                     <a href="#"><i class="fab fa-github"></i> Code</a> | 
-                    <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img 
+                src="images/profile.jpg" 
+                alt="Your Name" 
+                class="profile-pic"
+            >
+            <div class="bio">
+                <p>
+                    I'm a 4th-year ECE student passionate about embedded systems and hardware design. 
+                    When I'm not debugging circuits, I contribute to open-source hardware projects or 
+                    experiment with robotics.
+                </p>
+                <p>
+                    <strong>Skills:</strong> PCB Design (KiCad), Embedded C/C++, Python, MATLAB, Circuit Analysis
+                </p>
             </div>
         </div>
     </section>
@@ -278,18 +334,18 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Get In Touch</h2>
-        <p>Feel free to reach out for collaborations or just a chat!</p>
+        <p>Let's collaborate or chat about tech!</p>
         <div class="contact-links">
-            <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:MDLPRI040@myuct.ac.za"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://github.com/pmoodley22"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/priya-moodley-67416a349/"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="your-resume.pdf" download><i class="fas fa-file-pdf"></i> Download CV</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Priya Moodley. All rights reserved.</p>
     </footer>
 </body>
 </html>
