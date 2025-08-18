@@ -16,7 +16,7 @@
         body {
             line-height: 1.6;
             color: #333;
-            background-color: #fff0f5;
+            background-color: #f5f0e6;
         }
         
         header, section, footer {
@@ -27,7 +27,7 @@
         
         /* Header with Gradient */
         header {
-            background: linear-gradient(135deg, #8e44ad, #9b59b6);
+            background: linear-gradient(135deg, #6b8e23, #556b2f);
             color: white;
             text-align: center;
             padding: 3rem 2rem;
@@ -63,7 +63,8 @@
         
         /* Sections */
         section {
-            background: white;
+             background: rgba(255, 253, 250, 0.95); /* Warm white */
+            border: 1px solid #e0d6c2; /* Light brown border */
             margin: 2rem auto;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -90,12 +91,14 @@
 }
 
 .home-profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 8px;
     border: 5px solid white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    margin-right: 2rem; /* Added spacing */
 }
 
 .home-text {
@@ -105,13 +108,21 @@
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .home-content {
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1000px; /* Increased from 900px */
+    margin: 0 auto;
+    padding: 2rem;
     }
     .home-text {
         text-align: center;
     }
     .home-profile-pic {
+        width: 200px; /* Slightly smaller on mobile */
+        height: 240px;
+        margin-right: 0;
         margin-bottom: 1.5rem;
     }
 }
