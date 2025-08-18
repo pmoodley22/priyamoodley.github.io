@@ -27,7 +27,7 @@
         
         /* Header with Gradient */
         header {
-            background: linear-gradient(135deg, #1abc9c, #16a085);
+            background: linear-gradient(135deg, #8e44ad, #9b59b6);
             color: white;
             text-align: center;
             padding: 3rem 2rem;
@@ -79,37 +79,43 @@
             display: inline-block;
         }
         
-        /* Home Section */
-        #home {
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-        
-        #home h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        #home p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-        
-        .btn:hover {
-            background: #2980b9;
-        }
+        /* Home Section with Image */
+.home-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.home-profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.home-text {
+    text-align: left;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-text {
+        text-align: center;
+    }
+    .home-profile-pic {
+        margin-bottom: 1.5rem;
+    }
+}
+
         
         /* About Me */
         .about-content {
@@ -258,12 +264,16 @@
     </header>
 
     <!-- Home Section -->
-    <section id="home">
-        <h1> My name is Priya Moodley</h1>
-        <p> I am an Electrical & Computer Engineering Student at UCT.</p>
-        <p></p>
-        <a href="#projects" class="btn">View My Projects</a>
-    </section>
+   <section id="home">
+    <div class="home-content">
+        <img src="images/profile.jpg" alt="Priya Moodley" class="home-profile-pic">
+        <div class="home-text">
+            <h1>My name is Priya Moodley</h1>
+            <p>I am an Electrical & Computer Engineering Student at UCT.</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+    </div>
+ </section>
 
     <!-- CV Section -->
     <section id="cv">
