@@ -223,6 +223,40 @@
             transform: translateY(-2px);
         }
         
+                /* Section Headings */
+        .profile-section {
+            border-left: 2px solid #f5f0e6 !important; /* Light border */
+            padding-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .profile-section::before {
+            display: none; /* Hide timeline dot */
+        }
+        
+        .section-heading {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-heading::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #a05f38; /* Terracotta underline */
+        }
+        
+        /* Adjust spacing */
+        .cv-item:not(.profile-section) {
+            margin-top: 0.5rem;
+        }
+        
         /* CV Items - Updated Colors */
         .cv-item {
             border-left: 2px solid #a05f38; /* Terracotta */
@@ -417,7 +451,11 @@ driven by a relentless enthusiasm for learning, and I thrive in environments whe
         </div>
     
         <!-- Education -->
-        <div class="cv-item">
+         <div class="cv-item profile-section">
+        <h3 class="section-heading">Education</h3>
+    </div>
+           
+           <div class="cv-item">
             <span class="date">2022-Present</span>
             <h3>BScEng Electrical & Computer Engineering | University of Cape Town</h3>
             <ul class="cv-details">
@@ -437,6 +475,10 @@ driven by a relentless enthusiasm for learning, and I thrive in environments whe
         </div>
     
         <!-- Work Experience -->
+         <div class="cv-item profile-section">
+        <h3 class="section-heading">Work Experience</h3>
+    </div>
+           
         <div class="cv-item">
             <span class="date">Dec 2024-Jan 2025</span>
             <h3>Engineering Intern | Hatch Engineering</h3>
