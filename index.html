@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priya Moodley | Electrical & Computer Engineer</title>
+    <title>Priya Moodley | ePortfolio</title>
     <style>
         /* Modern Styling */
         * {
@@ -99,7 +99,7 @@
             height: 360px;
             object-fit: cover;
             border-radius: 8px;
-            border: 5px solid white;
+            border: 5px solid a05f38;
             box-shadow: 0 5px 25px rgba(0,0,0,0.2);
             /* No margin-right needed anymore */
         }
@@ -195,6 +195,98 @@
             position: absolute;
             left: -8.5px;
             top: 5px;
+        }
+                /* CV Section Header */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        /* Download Button */
+        .download-btn {
+            background: #a05f38;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .download-btn:hover {
+            background: #8a4f2e;
+            transform: translateY(-2px);
+        }
+        
+        /* CV Items - Updated Colors */
+        .cv-item {
+            border-left: 2px solid #a05f38; /* Terracotta */
+        }
+        
+        .cv-item::before {
+            background: #a05f38; /* Terracotta */
+        }
+        
+        .cv-item .date {
+            background: #6b8e23; /* Earth green */
+        }
+        
+                /* CV Items */
+        .profile-summary {
+            border-left: 2px solid #f5f0e6; /* Light border for profile */
+            padding-bottom: 1.5rem;
+        }
+        
+        .profile-summary::before {
+            display: none; /* Hide dot for profile */
+        }
+        
+        .skills-section {
+            padding-bottom: 2rem;
+        }
+        
+        .cv-details {
+            margin-left: 1.5rem;
+            color: #555;
+        }
+        
+        .cv-details li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .skills-grid h4 {
+            color: #a05f38;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .skills-grid ul {
+            list-style-type: none;
+        }
+        
+        .skills-grid li {
+            margin-bottom: 0.3rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+        
+        .skills-grid li::before {
+            content: "•";
+            color: #6b8e23;
+            position: absolute;
+            left: 0;
         }
         
         /* Projects */
@@ -298,28 +390,94 @@
         <img src="images/profile.jpg" alt="Priya Moodley" class="home-profile-pic">
         <div class="home-text">
             <h1><span class="greeting">Hello!</span><br>My name is Priya Moodley.</h1>
-            <p>I am an Electrical & Computer Engineering Student at UCT.</p>
+            <p>Welcome to my professional portfolio. I am an Electrical & Computer Engineering Student at the University of Cape Town. I am passionate about creating a world </p>
             <a href="#projects" class="btn">View My Projects</a>
         </div>
     </div>
 </section>
-
-    <!-- CV Section -->
-    <section id="cv">
-        <h2>My CV</h2>
-        <div class="cv-item">
-            <span class="date">2023 - Present</span>
-            <h3>Bachelor's in Electrical & Computer Engineering | University Name</h3>
-            <p>
-                Relevant coursework: Embedded Systems, Digital Design, Signal Processing, PCB Fabrication
-            </p>
+    
+        <!-- CV Section -->
+       <section id="cv">
+        <div class="section-header">
+            <h2>My Journey</h2>
+            <a href="documents/Priya_Moodley_CV.pdf" download class="download-btn">
+                <i class="fas fa-file-pdf"></i> Download Full CV
+            </a>
         </div>
+    
+        <!-- Personal Profile -->
+        <div class="cv-item profile-summary">
+            <h3>Personal Profile</h3>
+            <p>Fourth-year Electrical and Computer Engineering student at UCT with a 76%+ average. Multidisciplinary achiever in academics, arts (stage productions), sports, and music (piano). Combines technical aptitude with leadership and teamwork skills honed through engineering projects and extracurricular activities.</p>
+        </div>
+    
+        <!-- Education -->
         <div class="cv-item">
-            <span class="date">Summer 2023</span>
-            <h3>Hardware Engineering Intern | Company Name</h3>
-            <p>
-                Designed PCBs for IoT devices and optimized firmware in C++.
-            </p>
+            <span class="date">2022-Present</span>
+            <h3>BScEng Electrical & Computer Engineering | University of Cape Town</h3>
+            <ul class="cv-details">
+                <li>Current average: 76.52% (3rd year)</li>
+                <li>Consistent academic performance: 76.98% (1st year), 76.06% (2nd year)</li>
+            </ul>
+        </div>
+    
+        <div class="cv-item">
+            <span class="date">2017-2021</span>
+            <h3>Westville Girls' High School</h3>
+            <ul class="cv-details">
+                <li>Matriculated with 93% average, 98% in Mathematics</li>
+                <li>7 distinctions including Physical Science, Dramatic Arts</li>
+                <li>Liberty Bell Trophy for academic achievement</li>
+            </ul>
+        </div>
+    
+        <!-- Work Experience -->
+        <div class="cv-item">
+            <span class="date">Dec 2024-Jan 2025</span>
+            <h3>Engineering Intern | Hatch Engineering</h3>
+            <ul class="cv-details">
+                <li>Designed P&ID and Network Architecture Diagrams</li>
+                <li>Cross-disciplinary collaboration with mechanical/chemical engineers</li>
+            </ul>
+        </div>
+    
+        <div class="cv-item">
+            <span class="date">Dec 2022</span>
+            <h3>Industrial Training | CPUT</h3>
+            <ul class="cv-details">
+                <li>Fitting, turning, and welding intensive</li>
+                <li>Manufacturing workflow observation</li>
+            </ul>
+        </div>
+    
+        <!-- Skills -->
+        <div class="cv-item skills-section">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+                <div>
+                    <h4>Programming</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Delphi</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Hardware</h4>
+                    <ul>
+                        <li>PCB Design</li>
+                        <li>Basic Networking</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>AutoCAD</li>
+                        <li>MATLAB</li>
+                        <li>MicroStation</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
