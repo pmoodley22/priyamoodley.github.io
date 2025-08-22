@@ -26,12 +26,15 @@
         }
         
         /* Header with Gradient */
-        header {
-            background: linear-gradient(135deg, #6b8e23, #556b2f);
-            color: white;
-            text-align: center;
-            padding: 3rem 2rem;
-        }
+
+                   header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: linear-gradient(135deg, #2e5838, #1b4332);
+        width: 100%;
+        padding: 0; /* Remove padding from header */
+    }
         
         header h1 {
             font-size: 2.5rem;
@@ -39,26 +42,20 @@
         }
         
         /* Navigation */
+                nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
         nav ul {
             display: flex;
             justify-content: center;
             list-style: none;
             padding: 1.5rem 0;
-            background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+            background: rgba(0, 0, 0, 0.1);
             border-radius: 5px;
-            margin-top: 1rem;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            color: #f1c40f;
+            margin: 0; /* Remove margin */
         }
         
         /* Sections */
@@ -72,7 +69,7 @@
         }
         
         h2 {
-            color: #2c3e50;
+            color: #2e5838 ;
             margin-bottom: 1.5rem;
             font-size: 2rem;
             border-bottom: 3px solid #a05f38;
@@ -172,7 +169,7 @@
         }
         
         .cv-item h3 {
-            color: #2c3e50;
+            color: #2e5838 ;
             margin-bottom: 0.5rem;
         }
         
@@ -235,7 +232,7 @@
         }
         
         .section-heading {
-            color: #2c3e50;
+            color: #2e5838 ;
             font-size: 1.8rem;
             margin-bottom: 0.5rem;
             position: relative;
@@ -359,7 +356,7 @@
         }
         
         .contact-links a {
-            color: #2c3e50;
+            color: #2e5838 ;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -374,7 +371,7 @@
         /* Footer */
         footer {
             text-align: center;
-            background: #2c3e50;
+            background: #2e5838 ;
             color: white;
             padding: 1.5rem;
             margin-top: 2rem;
@@ -424,7 +421,7 @@
         <img src="images/profile.jpg" alt="Priya Moodley" class="home-profile-pic">
         <div class="home-text">
             <h1><span class="greeting">Hello!</span><br>My name is Priya Moodley.</h1>
-            <p>Welcome to my professional portfolio. Scroll down or use the navigational buttons at the top of the screen to learn more about me. I hope you enjoy and have a great day! </p>
+            <p>Welcome to my professional portfolio. Scroll down or use the navigational buttons at the top of the screen to learn more about me. </p>
         </div>
     </div>
 </section>
